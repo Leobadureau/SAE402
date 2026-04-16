@@ -76,8 +76,8 @@
                     </div>
                 </div>
 
-                <button class="add-to-cart">AJOUTER AU PANIER</button>
-                <button class="contact-expert" onclick="openPopup()">OUTILS DE PERSONNALISATION</button>
+                <button class="add-to-cart"><a href="Personalisation.html">Personnalisation</a></button>
+                <button class="contact-expert>OUTILS DE PERSONNALISATION</button>
 
                 <div class="product-description">
                     <details open>
@@ -92,42 +92,6 @@
             </div>
         </aside>
     </main>
-
-    <!-- POPUP -->
-    <div id="popup" class="popup">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">×</span>
-            <h2>Personnalisation</h2>
-            <p>Utilisez les outils pour créer votre pièce unique.</p>
-
-            <div class="customizer">
-                <div class="product">
-                    <img src="Fichier 2.png" class="background-image" alt="tshirt">
-                    <div class="svg-layer">
-                        <svg viewBox="220 -75 320 1205">
-                            <path id="shape1" d="M24.77,28.96C49.29,19.56,73.81,10.17,98.33.78c-11.31,65.21.46,129.5-14.61,186-53.22,199.57-9.61,368.45,96.26,368.12l57.65,438.23-142.43-17.28C95.22,801.12-.28,462.52.5,458.61S33.43,41.18,24.77,28.96Z" fill="#ff0000"/>
-                        </svg>
-                        <svg viewBox="130 -620 70 1230">
-                            <path id="shape2" d="M49.1,463.87C48.93,300.33,25.37,154.67.58,9.96,60.78-1.3,120.28-3.01,175.88,47.52,236.86,5.06,295.66-11.69,351.18,9.96c-23.46,129.32-38.23,284.86-48.52,453.91l-126.78,42.26-126.78-42.26Z" fill="#ff0000"/>
-                        </svg>
-                        <svg viewBox="-325 -75 330 1205">
-                            <path id="shape3" d="M213.45,28.96c-24.52-9.39-49.04-18.78-73.57-28.17,11.31,65.21-.46,129.5,14.61,186,53.22,199.57,9.61,368.45-96.26,368.12L.58,993.13l142.43-17.28c-.02-174.73,95.48-513.32,94.7-517.24S204.79,41.18,213.45,28.96Z" fill="#ff0000"/>
-                        </svg>
-                    </div>
-                    <div class="general-picker">
-                        <input class="jscolor" value="ff0000" data-jscolor="{onFineChange:'changeGeneralColor(this)'}">
-                    </div>
-                    <div class="preset-colors">
-                        <div class="color-box" style="background:red;" onclick="setGeneralColor('#ff0000')"></div>
-                        <div class="color-box" style="background:blue;" onclick="setGeneralColor('#0000ff')"></div>
-                        <div class="color-box" style="background:orange;" onclick="setGeneralColor('#ffa500')"></div>
-                        <div class="color-box" style="background:green;" onclick="setGeneralColor('#008000')"></div>
-                        <div class="color-box" style="background:yellow;" onclick="setGeneralColor('#ffff00')"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- JS -->
     <script src="script.js"></script>
