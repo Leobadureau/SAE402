@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSA x Doris Marten - Produit</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="boutique.css">
+
+    <!-- JSColor -->
+    <script src="https://jscolor.com/release/2.4.5/jscolor.js"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-minimal">
+        <div class="nav-left">
+            <div class="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="logo">
+            <a href="index.html"><img src="img/Logo 1.png" alt="MUSA"></a>
+        </div>
+
+        <div class="nav-right">
+            <a href="#">PANIER (0)</a>
+        </div>
+
+        <!-- MENU MOBILE -->
+        <div id="mobileMenu" class="mobile-menu">
+            <span class="close-menu" onclick="toggleMenu()">×</span>
+            <a href="boutique.html">Page Produit</a>
+            <a href="test.html">Personnalisation</a>
+        </div>
+    </nav> 
+
+    <!-- PAGE PRODUIT -->
+    <main class="product-container">
+
+        <!-- VISUELS -->
+        <section class="product-visuals">
+            <div class="image-wrapper">
+                <video autoplay muted loop playsinline>
+                    <source src="Video/Defilé2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="image-grid-two">
+                <div class="image-wrapper"><img src="img/look2.jpg" alt=""></div>
+                <div class="image-wrapper"><img src="img/Look2 _detail.png" alt=""></div>
+            </div>
+        </section>
+
+        <!-- INFOS -->
+        <aside class="product-info">
+            <div class="info-content">
+                <p class="category-label">MUSA x DORIS MARTEN</p>
+                <h1 class="product-title">Haut inspiration dirndl</h1>
+                <p class="product-subtitle">Light ’n’ Lines</p>
+                <p class="product-price">450 €</p>
+
+                <div class="product-selection">
+                    <p class="selection-title">RÉFÉRENCE : 25B-MUSA16</p>
+                    <div class="size-selector">
+                        <button class="size-btn">34</button>
+                        <button class="size-btn">36</button>
+                        <button class="size-btn active">38</button>
+                        <button class="size-btn">40</button>
+                        <button class="size-btn">42</button>
+                    </div>
+                </div>
+
+                <button class="add-to-cart">AJOUTER AU PANIER</button>
+                <button class="contact-expert" onclick="openPopup()">OUTILS DE PERSONNALISATION</button>
+
+                <div class="product-description">
+                    <details open>
+                        <summary>DESCRIPTION</summary>
+                        <p>Haut inspiré du dirndl revisité avec une approche contemporaine.</p>
+                    </details>
+                    <details>
+                        <summary>MATIÈRES & ENTRETIEN</summary>
+                        <p>Confection premium.</p>
+                    </details>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- POPUP -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">×</span>
+            <h2>Personnalisation</h2>
+            <p>Utilisez les outils pour créer votre pièce unique.</p>
+
+            <div class="customizer">
+                <div class="product">
+                    <img src="Fichier 2.png" class="background-image" alt="tshirt">
+                    <div class="svg-layer">
+                        <svg viewBox="220 -75 320 1205">
+                            <path id="shape1" d="M24.77,28.96C49.29,19.56,73.81,10.17,98.33.78c-11.31,65.21.46,129.5-14.61,186-53.22,199.57-9.61,368.45,96.26,368.12l57.65,438.23-142.43-17.28C95.22,801.12-.28,462.52.5,458.61S33.43,41.18,24.77,28.96Z" fill="#ff0000"/>
+                        </svg>
+                        <svg viewBox="130 -620 70 1230">
+                            <path id="shape2" d="M49.1,463.87C48.93,300.33,25.37,154.67.58,9.96,60.78-1.3,120.28-3.01,175.88,47.52,236.86,5.06,295.66-11.69,351.18,9.96c-23.46,129.32-38.23,284.86-48.52,453.91l-126.78,42.26-126.78-42.26Z" fill="#ff0000"/>
+                        </svg>
+                        <svg viewBox="-325 -75 330 1205">
+                            <path id="shape3" d="M213.45,28.96c-24.52-9.39-49.04-18.78-73.57-28.17,11.31,65.21-.46,129.5,14.61,186,53.22,199.57,9.61,368.45-96.26,368.12L.58,993.13l142.43-17.28c-.02-174.73,95.48-513.32,94.7-517.24S204.79,41.18,213.45,28.96Z" fill="#ff0000"/>
+                        </svg>
+                    </div>
+                    <div class="general-picker">
+                        <input class="jscolor" value="ff0000" data-jscolor="{onFineChange:'changeGeneralColor(this)'}">
+                    </div>
+                    <div class="preset-colors">
+                        <div class="color-box" style="background:red;" onclick="setGeneralColor('#ff0000')"></div>
+                        <div class="color-box" style="background:blue;" onclick="setGeneralColor('#0000ff')"></div>
+                        <div class="color-box" style="background:orange;" onclick="setGeneralColor('#ffa500')"></div>
+                        <div class="color-box" style="background:green;" onclick="setGeneralColor('#008000')"></div>
+                        <div class="color-box" style="background:yellow;" onclick="setGeneralColor('#ffff00')"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
